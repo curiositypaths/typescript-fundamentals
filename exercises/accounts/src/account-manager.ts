@@ -1,3 +1,13 @@
+interface IUser {
+  email: string;
+  password: string;
+  isActive: boolean;
+}
+
+interface IAdmin {
+  adminSince: Date;
+}
+
 export class AccountManager {
   users = new Array();
 
